@@ -1,4 +1,4 @@
-# Crystal ClearBuds | Augmented Reality <img src="images/hotspot.svg" alt="Crystal Icon" width="60px"> 
+# <img src="images/hotspot.svg" alt="Crystal Icon" width="20px"> Crystal ClearBuds | Augmented Reality <img src="images/hotspot.svg" alt="Crystal Icon" width="20px"> 
 
 Welcome to Crystal ClearBuds in agumented reality! 
 

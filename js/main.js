@@ -37,14 +37,8 @@
 
         {
             title: "Volume & Call Control",
-            desc: "Control the volume by sliding up or down. Call control capabilties upon pressing twice on the slider.Refer to the Crystal ClearBuds instructions for more information.",
+            desc: "Control the volume by sliding up or down. Call control capabilties upon pressing twice on the slider. Refer to the Crystal ClearBuds instructions for more information.",
             image: "images/hotspot5-calls.svg"
-        },
-
-        {
-            title: "Right Earbud",
-            desc: "Labeled right & left earbuds.",
-            image: "images/hotspot6-arrows.svg"
         }
 
     ];

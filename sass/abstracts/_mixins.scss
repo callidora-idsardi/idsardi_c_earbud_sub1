@@ -1,11 +1,45 @@
 //Mixins
 
+
+
+
+
+//moving gradient 
+@mixin moving-gradient {
+      background: rgb(255, 190, 245);
+      background: linear-gradient(10deg, rgba(255, 190, 245, 0.671) 20%, rgba(205, 184, 255, 0.74) 49%, rgba(185, 243, 255, 0.477) 91%);
+      background-size: 200% 200%;
+      animation: gradient 10s ease infinite;
+
+      @keyframes gradient {
+            0% {
+                  background-position: 0% 50%;
+            }
+
+            50% {
+                  background-position: 100% 10%;
+            }
+
+            100% {
+                  background-position: 0% 50%;
+            }
+      }
+
+}
+
+
+
+
+
+
+
+
 @mixin rotated($radius) {
       -webkit-transform: rotate($radius);
       -ms-transform: rotate($radius);
-       transform: rotate($radius);
- }
- 
+      transform: rotate($radius);
+}
+
 
 //flex box mixins
 
@@ -13,23 +47,23 @@
       display: flex;
       flex-direction: column;
 }
-    
+
 @mixin flex-center {
       display: flex;
       align-items: center;
       justify-content: center;
 }
-    
+
 @mixin flex-center-column {
       @include flex-center;
       flex-direction: column;
 }
-    
+
 @mixin flex-center-vert {
       display: flex;
       align-items: center;
 }
-    
+
 @mixin flex-center-horiz {
       display: flex;
       justify-content: center;
@@ -39,13 +73,14 @@
 
 @mixin fontFace($font-family, $file-path) {
       @font-face {
-          font: {
-              family: $font-family;
-              weight: normal;
-              style: normal;
-          }
-          //Modern Browsers
-          src: url('#{$file-path}.woff') format('woff'),
-          url('#{$file-path}.woff2') format('woff2')
+            font: {
+                  family: $font-family;
+                  weight: normal;
+                  style: normal;
+            }
+
+            //Modern Browsers
+            src: url('#{$file-path}.woff') format('woff'),
+            url('#{$file-path}.woff2') format('woff2')
       }
-  }
+}

@@ -1,9 +1,8 @@
 @use '../abstracts' as a;
 
 model-viewer {
-    width: auto;
-    max-width: 1200px;
-    height: 800px;
+    width: 400px;
+    height: 900px;
     margin: 0 auto;
     @include a.moving-gradient;
 }
@@ -16,7 +15,6 @@ model-viewer {
     height: 30px;
     margin: 0 auto;
     display: none;
-
 }
 
 .Hotspot:not([data-visible]) {
@@ -25,11 +23,17 @@ model-viewer {
 }
 
 .HotspotAnnotation img {
-    height: 50px;
+    height: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
+
+
+model-viewer::part(default-progress-bar) {
+    height: 10px;
+    background-color: #ffa2e9;
+}
 
 .HotspotAnnotation {
     color: rgb(86, 74, 92);
@@ -41,9 +45,8 @@ model-viewer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 18px;
     left: calc(100% + 1em);
-    max-width: 300px;
+    max-width: 150px;
     overflow-wrap: break-word;
     padding: 10px;
     position: absolute;
@@ -52,85 +55,42 @@ model-viewer {
     text-align: left;
 }
 
-model-viewer::part(default-progress-bar) {
-    height: 10px;
-    background-color: #ffa2e9;
-}
+//Tablet Media Queries 
 
-/* AR Rules */
-#ar-button {
-    background-image: url(../images/ar_icon.png);
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    background-position: 12px 50%;
-    background-color: #fff;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    bottom: 16px;
-    padding: 0px 16px 0px 40px;
-    font-family: Roboto Regular, Helvetica Neue, sans-serif;
-    font-size: 14px;
-    color: #4285f4;
-    height: 36px;
-    line-height: 36px;
-    border-radius: 18px;
-    border: 1px solid #DADCE0;
-}
+@media screen and (min-width: 768px) {
 
-#ar-button:active {
-    background-color: #E8EAED;
-}
-
-#ar-button:focus {
-    outline: none;
-}
-
-#ar-button:focus-visible {
-    outline: 1px solid #4285f4;
-}
-
-@keyframes circle {
-    from {
-        transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg);
+    model-viewer {
+        width: 768px;
+        height: 800px;
     }
 
-    to {
-        transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg);
-    }
-}
+    .HotspotAnnotation {
+        max-width: 300px;
 
-@keyframes elongate {
-    from {
-        transform: translateX(100px);
     }
 
-    to {
-        transform: translateX(-100px);
+    .HotspotAnnotation img {
+        height: 50px;
     }
+
 }
 
-model-viewer>#ar-prompt {
-    position: absolute;
-    left: 50%;
-    bottom: 60px;
-    animation: elongate 2s infinite ease-in-out alternate;
-    display: none;
+//Desktop Media Queries 
+
+@media screen and (min-width: 1200px) {
+
+    model-viewer {
+        width: 1200px;
+        height: 800px;
+    }
+
 }
 
-model-viewer[ar-status=session-started]>#ar-prompt {
-    display: block;
-}
+//Large Desktop Media Queries 
+@media screen and (min-width: 1920px) {
 
-model-viewer>#ar-prompt>img {
-    animation: circle 4s linear infinite;
-}
-
-#about-us {
-    margin-bottom: 40px;
-}
-
-#founders section {
-    margin-bottom: 40px;
+    model-viewer {
+        width: 1920px;
+        height: 900px;
+    }
 }

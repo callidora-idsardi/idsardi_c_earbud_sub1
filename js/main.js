@@ -6,9 +6,6 @@
     const model = document.querySelector("#model");
     const hotSpots = document.querySelectorAll(".Hotspot");
 
-
-
-    //functions
     const infoSpots = [
 
         {
@@ -60,6 +57,8 @@
         hotspotCon.appendChild(spotImage);
     });
 
+
+    //functions
 
     function loaded() {
         hotSpots.forEach(hotSpot => {

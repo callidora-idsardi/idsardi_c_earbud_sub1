@@ -6,13 +6,11 @@ model-viewer {
     margin: 0 auto;
     @include a.moving-gradient;
 
-
     &::part(default-progress-bar) {
         height: 10px;
         background-color: #ff67b6;
     }
 }
-
 
 .Hotspot {
     background: url(../images/hotspot.svg) center no-repeat;
@@ -29,15 +27,13 @@ model-viewer {
 }
 
 .HotspotAnnotation {
+    @include a.flex-center-column;
     color: rgb(86, 74, 92);
     backdrop-filter: saturate(100%) blur(50px);
     background-color: rgba(249, 249, 249, 0.532);
     visibility: hidden;
     border-radius: 50px;
-    box-shadow: 0 2px 4px rgba(47, 47, 47, 0.25);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    box-shadow: 0 2px 4px rgba(56, 11, 135, 0.25);
     left: calc(100% + 1em);
     max-width: 150px;
     overflow-wrap: break-word;
@@ -45,7 +41,6 @@ model-viewer {
     position: absolute;
     top: 50%;
     width: max-content;
-    text-align: left;
 
     img {
         height: 30px;

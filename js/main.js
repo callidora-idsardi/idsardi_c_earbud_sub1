@@ -25,19 +25,19 @@
 
         {
             title: "Outer Mic",
-            desc: "Two outer microphones ensures Crystal Clear calls with minimal interrupions.",
+            desc: "Two outer microphones ensures Crystal Clear calls with minimal interruptions.",
             image: "images/hotspot3-convo.svg"
         },
 
         {
             title: "Spatial Vent",
-            desc: "Noise cancelling spatial vent at the back of the earbud filters out unwanted noises while letting in ambient sounds.",
+            desc: "Noise canceling spatial vent at the back of the earbud filters out unwanted noises while letting in ambient sounds.",
             image: "images/hotspot4-alert.svg"
         },
 
         {
             title: "Volume & Call Control",
-            desc: "Control the volume by sliding up or down. Call control capabilties upon pressing twice on the slider. Refer to the Crystal ClearBuds instructions for more information.",
+            desc: "Control the volume by sliding up or down. Call control capabilities upon pressing twice on the slider. Refer to the Crystal ClearBuds instructions for more information.",
             image: "images/hotspot5-calls.svg"
         }
 

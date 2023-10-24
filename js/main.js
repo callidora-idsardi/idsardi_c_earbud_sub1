@@ -39,7 +39,7 @@
             desc: "Noise canceling spatial vent at the back of the earbud filters out unwanted noises while letting in ambient sounds.",
             image:{
                 src:"images/hotspot4-alert.svg",
-                alt:"exclamation alertbubble"
+                alt:"exclamation alert bubble"
             } 
         },
 
@@ -48,7 +48,7 @@
             desc: "Control the volume by sliding up or down. Call control capabilities upon pressing twice on the slider. Refer to the Crystal ClearBuds instructions for more information.",
             image:{
                 src:"images/hotspot5-calls.svg",
-                alt:"cellphone"
+                alt:"cell phone"
             } 
         }
 
@@ -71,7 +71,7 @@
         spotImage.src = info.image.src;
         spotImage.alt = info.image.alt;
         hotspotCon.appendChild(spotImage);
-    })
+    });
     }   
 
     loadSpots();

@@ -16,21 +16,20 @@
         },
 
         {
-            title: "Eartip Size M",
-            desc: "Get the perfect fit with a selection of earbud sizes - S, M & L silicone tip sizes available.",
-            image:{
-                src:"images/hotspot2-size.svg",
-                alt:"size arrows"
-            } 
-            
-        },
-
-        {
             title: "Outer Mic",
             desc: "Two outer microphones ensures Crystal Clear calls with minimal interruptions.",
             image:{
                 src:"images/hotspot3-convo.svg",
                 alt:"conversation bubble"
+            } 
+        },
+
+        {
+            title: "Volume & Call Control",
+            desc: "Control the volume by sliding up or down. Call control capabilities upon pressing twice on the slider. Refer to the Crystal ClearBuds instructions for more information.",
+            image:{
+                src:"images/hotspot5-calls.svg",
+                alt:"cell phone"
             } 
         },
 
@@ -43,13 +42,15 @@
             } 
         },
 
+     
         {
-            title: "Volume & Call Control",
-            desc: "Control the volume by sliding up or down. Call control capabilities upon pressing twice on the slider. Refer to the Crystal ClearBuds instructions for more information.",
+            title: "Eartip Size M",
+            desc: "Get the perfect fit with a selection of earbud sizes - S, M & L silicone tip sizes available.",
             image:{
-                src:"images/hotspot5-calls.svg",
-                alt:"cell phone"
+                src:"images/hotspot2-size.svg",
+                alt:"size arrows"
             } 
+            
         }
 
     ];

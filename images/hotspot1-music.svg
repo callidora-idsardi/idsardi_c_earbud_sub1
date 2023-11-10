@@ -1,16 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="102.01" viewBox="0 0 102 102.01">
   <defs>
-    <style>
-      .cls-1 {
-        fill: url(#linear-gradient);
-        stroke-width: 0px;
-      }
-    </style>
-    <linearGradient id="linear-gradient" x1="0" y1="50" x2="100" y2="50" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#92a4ff"/>
       <stop offset="1" stop-color="#fcd6f8"/>
     </linearGradient>
   </defs>
-  <path id="Icon_awesome-music" data-name="Icon awesome-music" class="cls-1" d="m100,6.25c0-3.45-2.79-6.25-6.24-6.25-.64,0-1.28.1-1.89.29L29.37,18.75c-2.6.82-4.37,3.23-4.37,5.96v51.06c-2.05-.5-4.14-.75-6.25-.76-10.36,0-18.75,5.6-18.75,12.5s8.39,12.5,18.75,12.5,18.75-5.6,18.75-12.5v-45.64l50-14.65v36.06c-2.05-.5-4.14-.76-6.25-.77-10.36,0-18.75,5.6-18.75,12.5s8.39,12.5,18.75,12.5,18.75-5.6,18.75-12.5c0,0,0-68.75,0-68.75Z"/>
+  <path id="Icon_awesome-music" data-name="Icon awesome-music" d="M100,6.25A6.244,6.244,0,0,0,93.76,0a6.372,6.372,0,0,0-1.89.29L29.37,18.75A6.248,6.248,0,0,0,25,24.71V75.77a26.859,26.859,0,0,0-6.25-.76C8.39,75.01,0,80.61,0,87.51s8.39,12.5,18.75,12.5,18.75-5.6,18.75-12.5V41.87l50-14.65V63.28a26.869,26.869,0,0,0-6.25-.77c-10.36,0-18.75,5.6-18.75,12.5s8.39,12.5,18.75,12.5S100,81.91,100,75.01V6.26Z" transform="translate(1 1)" stroke="#606060" stroke-width="2" fill="url(#linear-gradient)"/>
 </svg>

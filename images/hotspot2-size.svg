@@ -1,16 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="102" viewBox="0 0 102 102">
   <defs>
-    <style>
-      .cls-1 {
-        fill: url(#linear-gradient);
-        stroke-width: 0px;
-      }
-    </style>
-    <linearGradient id="linear-gradient" x1="0" y1="50" x2="100" y2="50" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#92a4ff"/>
       <stop offset="1" stop-color="#fcd6f8"/>
     </linearGradient>
   </defs>
-  <path id="Icon_open-resize-both" data-name="Icon open-resize-both" class="cls-1" d="m50,0l20.75,20.75-50,50L0,50v50h50l-20.75-20.75,50-50,20.75,20.75V0h-50Z"/>
+  <path id="Icon_open-resize-both" data-name="Icon open-resize-both" d="M50,0,70.75,20.75l-50,50L0,50v50H50L29.25,79.25l50-50L100,50V0Z" transform="translate(1 1)" stroke="#606060" stroke-width="2" fill="url(#linear-gradient)"/>
 </svg>

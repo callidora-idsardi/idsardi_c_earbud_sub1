@@ -1,16 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102.001" height="103.416" viewBox="0 0 102.001 103.416">
   <defs>
-    <style>
-      .cls-1 {
-        fill: url(#linear-gradient);
-        stroke-width: 0px;
-      }
-    </style>
-    <linearGradient id="linear-gradient" x1="0" y1="50" x2="100" y2="50" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#92a4ff"/>
       <stop offset="1" stop-color="#fcd6f8"/>
     </linearGradient>
   </defs>
-  <path id="Icon_material-speaker-notes" data-name="Icon material-speaker-notes" class="cls-1" d="m90,0H10C4.49.02.04,4.49.05,10l-.05,90,20-20h70c5.52-.02,9.98-4.48,10-10V10c-.02-5.52-4.48-9.98-10-10ZM30,60h-10v-10h10v10Zm0-15h-10v-10h10v10Zm0-15h-10v-10h10v10Zm35,30h-25v-10h25v10Zm15-15h-40v-10h40v10Zm0-15h-40v-10h40v10Z"/>
+  <path id="Icon_material-speaker-notes" data-name="Icon material-speaker-notes" d="M90,0H10A9.98,9.98,0,0,0,.05,10L0,100,20,80H90a10.029,10.029,0,0,0,10-10V10A10.029,10.029,0,0,0,90,0ZM30,60H20V50H30Zm0-15H20V35H30Zm0-15H20V20H30ZM65,60H40V50H65ZM80,45H40V35H80Zm0-15H40V20H80Z" transform="translate(1.001 1)" stroke="#606060" stroke-width="2" fill="url(#linear-gradient)"/>
 </svg>

@@ -86,13 +86,14 @@
     function displayInfo() {
 
         let selected = document.querySelector(`#${this.slot}`);
-        gsap.to(selected, 1, { autoAlpha: 1});
-        gsap.to(selected, .5, {"background-position":"100%", });
+        gsap.to(selected, .5, { autoAlpha: 1});
+        gsap.to(selected, .5, {"background-position":"100%"});
     }
 
     function hideInfo() {
         let selected = document.querySelector(`#${this.slot}`);
-        gsap.to(selected, 1, { autoAlpha: 0,});
+        gsap.to(selected, .5, { autoAlpha: 0,});
+        gsap.to(selected, 1, {"background-position":"0%"});
     }
 
         model.addEventListener("load", loaded);

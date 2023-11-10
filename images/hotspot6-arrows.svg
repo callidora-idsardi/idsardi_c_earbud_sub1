@@ -1,16 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 124.62 100">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="126.624" height="102.002" viewBox="0 0 126.624 102.002">
   <defs>
-    <style>
-      .cls-1 {
-        fill: url(#linear-gradient);
-        stroke-width: 0px;
-      }
-    </style>
-    <linearGradient id="linear-gradient" x1="0" y1="50" x2="124.62" y2="50" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#92a4ff"/>
       <stop offset="1" stop-color="#fcd6f8"/>
     </linearGradient>
   </defs>
-  <path id="Icon_awesome-angle-double-right" data-name="Icon awesome-angle-double-right" class="cls-1" d="m62.34,55.31l-42.49,42.49c-2.91,2.92-7.64,2.94-10.56.03-.01-.01-.02-.02-.03-.03l-7.06-7.06c-2.92-2.91-2.94-7.64-.03-10.56.01-.01.02-.02.03-.03l30.11-30.12L2.2,19.92c-2.92-2.91-2.94-7.64-.03-10.56.01-.01.02-.02.03-.03l7.03-7.12c2.91-2.92,7.64-2.94,10.56-.03.01.01.02.02.03.03l42.49,42.49c2.94,2.9,2.98,7.63.08,10.57-.02.02-.03.03-.05.05h0Zm59.98-10.62L79.83,2.2c-2.91-2.92-7.64-2.94-10.56-.03-.01.01-.02.02-.03.03l-7.06,7.06c-2.92,2.91-2.94,7.64-.03,10.56.01.01.02.02.03.03l30.12,30.12-30.12,30.12c-2.92,2.91-2.94,7.64-.03,10.56.01.01.02.02.03.03l7.06,7.06c2.91,2.92,7.64,2.94,10.56.03.01-.01.02-.02.03-.03l42.49-42.49c2.95-2.85,3.1-7.49.25-10.44-.06-.06-.12-.13-.25-.12h0Z"/>
+  <path id="Icon_awesome-angle-double-right" data-name="Icon awesome-angle-double-right" d="M62.34,55.31,19.85,97.8a7.469,7.469,0,0,1-10.56.03l-.03-.03L2.2,90.74a7.469,7.469,0,0,1-.03-10.56l.03-.03L32.31,50.03,2.2,19.92A7.469,7.469,0,0,1,2.17,9.36l.03-.03L9.23,2.21a7.469,7.469,0,0,1,10.56-.03l.03.03L62.31,44.7a7.472,7.472,0,0,1,.08,10.57l-.05.05h0Zm59.98-10.62L79.83,2.2a7.469,7.469,0,0,0-10.56-.03l-.03.03L62.18,9.26a7.469,7.469,0,0,0-.03,10.56l.03.03L92.3,49.97,62.18,80.09a7.469,7.469,0,0,0-.03,10.56l.03.03,7.06,7.06a7.469,7.469,0,0,0,10.56.03l.03-.03,42.49-42.49a7.354,7.354,0,0,0,.25-10.44.29.29,0,0,0-.25-.12h0Z" transform="translate(1.001 1.001)" stroke="#606060" stroke-width="2" fill="url(#linear-gradient)"/>
 </svg>

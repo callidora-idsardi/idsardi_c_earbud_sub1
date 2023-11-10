@@ -42,13 +42,13 @@ h5 {
 }
 
 .box {
-   background-color: powderblue;
+   font-size: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgba(234, 234, 234, 0.833);
    color: rgb(27, 27, 27);
-   border-radius: 5px;
-   padding: 20px;
    text-align: center;
-   margin-top: 10px;
-   margin-bottom: 10px;
 }
 
 /* ---Mobile Library Grid Styles--- */

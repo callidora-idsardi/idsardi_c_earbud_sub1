@@ -1,1 +1,157 @@
 @use '../abstracts' as a;
+
+
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+   z-index:3;
+}
+
+.mobile-logo {
+   width: 30px;
+   margin-left: 30px;
+   margin-top: 25px;
+   
+}
+
+.desktop-logo {
+   display: none;
+}
+
+
+
+.nav-con  {
+ 
+
+   ul {
+      padding: 0;
+   }
+
+   ul li a {
+      display: block;
+      text-align: center;
+      transition: all .4s ease;
+      margin: 15px;
+   }
+
+ }
+
+
+#sub-nav-con {
+   background-color: white;
+   padding: 10px;
+    @include a.flex-center;
+    @include a.box-shadow;
+    font-size: 1.2rem;
+
+    ul li {
+      display: inline;
+      transition: all .4s ease;
+      padding: 10px;
+    }
+
+    .buy-button {
+      border: 1px solid;
+      padding: 6px;
+      border-radius: 15px 2px;
+      font-weight:bold;
+
+      ul li a  {
+         margin-left: 50px;
+      }
+    }
+ }
+
+ .mobile-nav-icons {
+   margin-top: 20px;
+
+   width: 200px;
+
+   img {
+      transition: all .4s ease;
+   
+      &:hover {
+         opacity: 50%;
+      }
+   }
+
+ }
+
+
+/* Tablet Size */ 
+
+    @media screen and (min-width: 768px) {
+
+      .mobile-logo {
+         width: 30px;
+         margin-left: 0px;
+         margin-top: 25px;
+         
+      }
+
+      #sub-nav-con {
+         font-size: 1.6rem;
+      }
+
+ }
+
+
+@media screen and (min-width: 1200px) {
+
+   .mobile-logo {
+      display: none;
+   }
+
+   .mobile-nav-icons {
+      margin-top: 0;
+   }
+
+   .desktop-logo {
+      width: 2%;
+      display:inline;
+      margin-right: 50px;
+   }
+
+
+  #burger-con {
+   @include a.flex-center;
+   margin-top: 60px;
+   text-align: center;
+   @include a.background-blur;
+
+  ul li a {
+      display: inline;
+      font-size: 1.6rem;
+      padding: 10px;
+      text-decoration: none;
+      color: rgb(104, 72, 162);
+      transition: all .4s ease;
+   
+      &:hover {
+          opacity: 50%;
+      }
+
+   }
+
+   ul li, &:first-child {
+      border: none;
+      display: inline;
+
+  }
+
+  }
+
+ 
+
+.burger-bg {
+   display: none;
+}
+
+#burger-button {
+   display: none;
+}
+
+
+}

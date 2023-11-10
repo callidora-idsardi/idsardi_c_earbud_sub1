@@ -1,0 +1,66 @@
+@use '../abstracts' as a;
+
+
+
+//What's the mobile vs. tablet vs. desktop experience like? 
+
+#mobile-tablet-view {
+  gap: 25px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  @include a.flex-column;
+}
+
+@media screen and (min-width: 768px) {
+
+  #mobile-tablet-view {
+    img {
+      width: 400px;
+    }
+    @include a.flex-center;
+    flex-direction: row;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+#mobile-tablet-view {
+  display: none;
+}
+
+
+
+#imageCon {
+  position: relative;
+  width: 100%;
+}
+
+.slideImage {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 377px;
+}
+
+.image-left {
+  background: url(../images/earbud.jpg) no-repeat;
+  width: 50%; 
+  background-size: cover;
+}
+
+.image-right {
+  background: url(../images/earbud-x-ray.jpg) no-repeat;
+  background-size: cover;
+}
+
+
+.image-drag {
+  @include a.moving-gradient;
+  left: 50%; 
+  width: 10px; 
+  cursor: pointer;
+}
+  
+}
+

@@ -5,55 +5,330 @@
     <title>Crystal ClearBuds</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/jgi5grm.css">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
 
     <!-- link to greensock main library and scroll plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
 </head>
 
 <body>
     <h1 class="hidden">Crystal ClearBuds</h1>
-    <model-viewer id="model" src="model/idsardi_c__earbud_sub1.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
-        <h2 class="hidden">Crystal ClearBuds Model</h2>
+  
+        <header class="grid-con" id="main-header">
+           
+            <div class="col-start-1 l-col-start- l-col-end-13" id="menu">
+                <div id="burger-button">
+                  <div id="bar1" class="bar"></div>
+                  <div id="bar2" class="bar"></div>
+                  <div id="bar3" class="bar"></div>
+                </div>
+                <nav class="col-span-full l-col-start-4 burger-con" id="burger-con">
+                    <h2 class="hidden">Main Navigation</h2>
+                  <ul class="burger-menu">
+                    <li><a href="index.html"><img class="desktop-logo" src="images/hotspot.svg" alt="Crystal ClearBuds"> </a></li>
+                    <li><a href="#">PRODUCTS</a></li>
+                    <li><a href="#">EARBUDS</a></li>
+                    <li><a href="#">ACCESSORIES</a></li>
+                    <li><a href="#">SUPPORT</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="mobile-nav-icons">
+                        <a href="#"><img src="images/icon-search.svg" alt="account icon"></a>
+                        <a href="#"><img src="images/icon-account.svg" alt="account icon"></a>
+                        <a href="#"><img src="images/icon-shopping-cart.svg" alt="shopping cart icon"></a>
+                    </li>
+                </ul>
+                </nav> 
+              </div>
+              <div class="burger-bg" id="burger-bg"></div>
+              <div class="col-start-4 m-col-start-12">
+                <img class="mobile-logo" src="images/hotspot.svg" alt="Crystal ClearBuds">
+              </div>
+        </header>
+        <div class="sticky">
+            <section class="grid-con">
+                <div class="col-span-full" id="sub-nav-con">
+                    <h3 class="hidden">Sub Navigation</h3> 
+                    <ul>
+                        <li><a href="#">OVERVIEW</a></li>
+                        <li><a href="#">SPECS</a></li>
+                        <li><a href="#">COMPARE</a></li>
+                        <li><a class="buy-button" href="#">BUY NOW</a></li>
+                    </ul>
+                </div>
+             </section>
+        </div>
+    
 
-        <button class="Hotspot" slot="hotspot-1" data-position="-4.4814930867621765m 3.388607401393118m 0.4096830953213042m" data-normal="0.18842085049858406m 0.019697858963719474m 0.9818908174790291m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation" id="hotspot-1">
-                  <!-- dynamic content -->
-            </div>
-        </button>
-        
-        <button class="Hotspot" slot="hotspot-2" data-position="-4.622642437732472m 3.381331930369638m 0.2677768484941976m" data-normal="-0.3021250094658599m 0.0014909178287591301m 0.9532671481905175m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation" id="hotspot-2">
-                     <!-- dynamic content -->
-            </div>
-        </button>
-        
-        <button class="Hotspot" slot="hotspot-3" data-position="-4.515719176826088m 2.99646898395899m 0.17488121496911324m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation"  id="hotspot-3">
-                     <!-- dynamic content -->
-            </div>
-        </button>
-        
-        <button class="Hotspot" slot="hotspot-4" data-position="-4.509276772632682m 3.5350151088068245m 0.13024063177613732m" data-normal="0.015475412135104975m 0.703362870711851m -0.7106624963533904m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation" id="hotspot-4">
-                    <!-- dynamic content -->
-            </div>
-        </button>
-        
-        <button class="Hotspot" slot="hotspot-5" data-position="-4.40092751373583m 3.398098610252915m 0.35341768270829665m" data-normal="0.9926464125674918m 0.04096356258245456m 0.1139082356875152m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation" id="hotspot-5">
-                  <!-- dynamic content -->
-            </div>
-        </button>
+          <main>
 
-    </model-viewer>
+            <div class="full-width-grid-con">
+
+                <div id="hero" class="box col-span-full">Hero Image</div>
+
+            </div>
+            <div class="full-width-grid-con">
+                <section class="col-span-full" id="scrolling-con">
+                    <h2>INTRODUCING...</h2>
+                    <div class="box col-span-full">
+                        Scrolling Animation
+                    </div>
+                </section>
+            </div>
+            <div class="grid-con" id="buy-con">
+                <section class="col-span-full"  id="buy-area">
+                <h2>Crystal 
+                <br>
+                ClearBuds</h2>
+                <img src="images/hotspot.svg" alt="Crystal ClearBuds Logo">
+                </section>
+
+            </div>
+
+            <div class="grid-con">
+                <section class="col-span-full">
+                <h2 class="hidden">Crystal ClearBuds Model</h2>
+                <model-viewer id="model" src="model/idsardi_c__earbud_sub1.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
+            
+
+                    <button class="Hotspot" slot="hotspot-1" data-position="-4.4814930867621765m 3.388607401393118m 0.4096830953213042m" data-normal="0.18842085049858406m 0.019697858963719474m 0.9818908174790291m" data-visibility-attribute="visible">
+                        <div class=" hotspot-shine HotspotAnnotation" id="hotspot-1">
+                            <!-- dynamic content -->
+                        </div>
+                    </button>
+                    
+                    <button class="Hotspot" slot="hotspot-2" data-position="-4.622642437732472m 3.381331930369638m 0.2677768484941976m" data-normal="-0.3021250094658599m 0.0014909178287591301m 0.9532671481905175m" data-visibility-attribute="visible">
+                        <div class="hotspot-shine HotspotAnnotation" id="hotspot-2">
+                                <!-- dynamic content -->
+                        </div>
+                    </button>
+                    
+                    <button class="Hotspot" slot="hotspot-3" data-position="-4.515719176826088m 2.99646898395899m 0.17488121496911324m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+                        <div class="hotspot-shine HotspotAnnotation"  id="hotspot-3">
+                                <!-- dynamic content -->
+                        </div>
+                    </button>
+                    
+                    <button class="Hotspot" slot="hotspot-4" data-position="-4.509276772632682m 3.5350151088068245m 0.13024063177613732m" data-normal="0.015475412135104975m 0.703362870711851m -0.7106624963533904m" data-visibility-attribute="visible">
+                        <div class=" hotspot-shine HotspotAnnotation" id="hotspot-4">
+                                <!-- dynamic content -->
+                        </div>
+                    </button>
+                    
+                    <button class="Hotspot" slot="hotspot-5" data-position="-4.40092751373583m 3.398098610252915m 0.35341768270829665m" data-normal="0.9926464125674918m 0.04096356258245456m 0.1139082356875152m" data-visibility-attribute="visible">
+                        <div class=" hotspot-shine HotspotAnnotation" id="hotspot-5">
+                            <!-- dynamic content -->
+                        </div>
+                    </button>
+                </model-viewer>
+            </section>
+            </div>
+
+        <section class="grid-con" id="xray-container">
+            <h2 class="hidden">Crystal ClearBuds X-Ray Viewer</h2>
+            <div class="col-span-full m-col-start-3 m-col-end-9 l-col-start-1 l-col-end-6" id="xray-area">
+                <div class="xray-info">
+                    <section class="img-border">
+                        <h3>Clearer 
+                        <br>
+                        Moments.</h3>
+
+                        <p>Hear each note, each whisper, and every conversation with absolute clarity. Never miss out on an important moment. Our earbuds redefine your auditory experience, providing an immersive soundstage that elevates your favourite tunes, podcasts, and calls. <i>Crystal ClearBuds</i>, redefining the way you listen.</p>
+                    </section>
+                </div>
+            </div>
+         
+
+
+            <section class="col-span-full l-col-start-6 l-col-end-13">
+            <h2 class="hidden">X-Ray revealer</h2>
+
+            <div id="mobile-tablet-view">
+                <img src="images/earbud-x-ray.jpg" alt="x-ray view of earbuds">
+                <img src="images/earbud.jpg" alt="outer view of earbuds">
+                <!-- Now you can slide up in mobile view  -->
+            </div>
+                <div id="imageCon" class="col-span-full">
+                    <!-- Three images stacked together  -->
+                    <!-- xray version -->
+                    <div class="slideImage image-right"></div>
+                    <!-- rendered version -->
+                    <div class="slideImage image-left"></div>
+                    <!-- drag bar -->
+                    <div class="slideImage image-drag"></div>
+                </div>
+               
+            <section id="svg-con" class="l-col-start-8 l-col-end-12">
+                <svg class="draw-arrow" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 154.29 140.5"><defs><style>.cls-1{fill:none;stroke:#A7AEFC;stroke-linecap:round;stroke-miterlimit:10;stroke-width:5px;}</style></defs><path class="cls-1 draw" d="m130.95,29.9c6.86,14.57-5.54,33.36-16.37,42.6-4.51,3.85-9.75,6.93-15.44,8.65-5.44,1.65-11.36,1.77-17,2.18-8.8.65-18.09.78-26.61-1.71-1.42-.42-2.81-.98-4.02-1.84-9.49-6.75-3.28-21.86,1.95-29.14,1.96-2.73,4.29-5.28,7.21-6.94,3.58-2.04,7.65-2.25,11.51-.9,9.31,3.27,12.43,12.84,12.72,21.9s-.67,19.14-5.54,26.89-13.43,13.61-22.23,16.89c-9.22,3.43-19.28,5.05-29.12,4.67-7.04-.27-15.85-1.4-21.09-6.65-6.25-6.26-5.27-15.96-.76-22.91,5.43-8.37,15.74-12.76,25.29-8.77,2.49,1.04,4.82,2.62,6.3,4.87,4.24,6.44,1.3,15.84-1.21,22.42-4.9,12.85-12.58,24.97-20.88,35.9"/><path class="cls-1 draw" d="m109.43,40.64L135.02,3.29c.87-1.28,2.84-.96,3.26.53l13.5,47.29"/></svg>
+                <h3>Slide Image Here!</h3>
+            </section>  
+            </section>
+        </section> 
+
+        <section id="info-container">
+            <h2>Pure Sound, 
+            <br>
+            Crystal Clear.</h2>
+            <div id="info-con">
+                <div class="grid-con">
+                    <div class="image-box box col-span-full m-col-start-1 m-col-end-7">
+                        img1
+                    </div>
+                    <div id="infobox1" class="info-box col-span-full m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-12">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim illum nostrum reiciendis.</p>
+                    </div>
+                </div>
+    
+                <div class="grid-con">
+                    <div id="infobox2" class="info-box col-span-full m-col-start-1 m-col-end-7 l-col-start-2 l-col-end-7">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim illum nostrum reiciendis.</p>
+                    </div>
+                    <div class="image-box box col-span-full m-col-start-7 m-col-end-13">
+                        img2
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="grid-con">
+        <section id="excited-con" class="col-span-full ">
+            <h2>Excited for
+                <br>
+                 real sound?
+                <br>
+                Buy now. 
+            </h2>
+            <div id="product-img" class="box">Product Image</div>
+        </section>
+        </div>
+
+     
+            <div id="purchase-con" class="grid-con">
+                <div id="earbud-img" class="col-span-full box m-col-start-1 m-col-end-3 l-col-start-1 l-col-end-5">
+                Image of Earbuds
+                 </div>
+
+                <div class="col-span-full m-col-start-6 m-col-end-12 l-col-start-7 l-col-end-12">
+                    <section>
+                        <h2>Crystal ClearBuds</h2>
+                    <div id="rating">
+                    <img src="images/rating.svg" alt="5 star rating">
+                    <h3>5.0 RATING</h3>
+                    </div>
+                    </section>
+
+                    <section id="product-colours">
+                        <h4 class="hidden">COLOURS</h4>
+                        <section>
+                        <img src="https://placehold.co/70x70" alt="Rose Quartz">
+                        <h5>Rose Quartz</h5>
+                        </section>
+                        <section>
+                            <img src="https://placehold.co/70x70" alt="Green Jade">
+                            <h5>Green Jade</h5>
+                        </section>
+                        <section>
+                            <img src="https://placehold.co/70x70" alt="White Marble">
+                            <h5>White Marble</h5>
+                        </section>
+                        <section>
+                            <img src="https://placehold.co/70x70" alt="Blue Aqua">
+                            <h5>Blue Aqua</h5>
+                        </section>
+                    </section>
+
+
+                    <section id="product-div">
+                    <h2>Crystal ClearBuds</h2>
+                    <h3>Rose Quartz</h3>
+                    <p>$59.99</p>
+                    <div id="shopping">
+                    <a href="#"><img src="images/icon-shopping-cart.svg" alt="shopping cart icon"></a>
+                    <a  class="button" href="#">ADD TO CART
+                    </a>
+                    </div>
+                    </section>
+                </div>
+            </div>
+    
+
+
+
+
+
+    </main>
+
+    <footer class="grid-con">
+        <nav class="sub-footer-nav col-span-full">
+          <h2 class="hidden">Sub Navigation</h2> 
+          <a href="index.html"><img id="footer-logo" src="images/hotspot.svg" alt="Crystal ClearBuds"></a>
+        <section>
+            <h3>Constumer Support</h3>
+            <hr>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Returns & Exchanges</a></li>
+              <li><a href="#">Gift Cards</a></li>
+           </ul>
+        </section>
+          
+        <section>
+            <h3>Account</h3>
+            <hr>
+          <ul>
+            <li><a href="#">Manage Account</a></li>
+            <li><a href="#">Order History</a></li>
+            <li><a href="#">Account Preferences</a></li>
+          </ul>
+        </section>
+
+        <section>
+            <h3>Company</h3>
+            <hr>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Policies</a></li>
+          </ul>
+        </section>
+
+
+          <section id="footer-newsletter1">
+            <h3>Join the mailing list for exclusive deals.</h3>
+            <form action="email.php" method="POST" enctype="text/plain">
+                <input name="email" type="text" required placeholder="Email">
+                <input id="footer-submit" name="submit" type="submit" value="Sign Up">
+            </form>
+          </section>
+        </nav>
+
+        <section class="col-span-full icon-con">
+            <h3 class="hidden">Our Social Media</h3>
+            <ul>
+            <li class="social-icons">
+                <a href="#"><img src="images/icon-facebook.svg" alt="Facebook"></a> 
+                <a href="#"><img src="images/icon-twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="images/icon-linkedin.svg" alt="Linkedin"></a>
+                <a href="#"><img src="images/icon-instagram.svg" alt="Instagram"></a>
+            </li>
+            </ul>
+        </section>
+    </footer>
+   
 
     <!-- Loads <model-viewer> for browsers: -->
+
     <script src="js/main.js"></script>
+    <script src="js/x-ray.js"></script>
+    <script src="js/greensock.js"></script>
+    
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
 
 </body>

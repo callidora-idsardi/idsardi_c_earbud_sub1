@@ -1,0 +1,522 @@
+@use '../abstracts' as a;
+
+
+
+
+
+body {
+    background-image: url(../images/background_mobile.png);
+    background-repeat: repeat-y;
+    background-position: center top  -130px;
+ 
+}
+
+// Hero
+
+#hero {
+    margin-top: 40px;
+    height: 700px;
+}
+
+// Scroll Animation 
+
+#scrolling-con {
+    text-align: center;
+    margin-top: 100px;
+
+    .box {
+        height: 600px;
+    }
+
+    h2 {
+        margin-bottom: 50px;
+    }
+}
+
+
+
+// Buy Area
+
+#buy-area {
+    margin-top: 100px;
+    @include a.flex-center;
+    text-align: center;
+    gap: 20px;
+
+h2 {
+    font-family: a.$logo-font;
+    font-weight: 700;
+    font-style: normal;
+}
+
+img {
+    width:20px;
+    margin-bottom: 20px;
+}
+}
+
+
+//X-Ray Area
+
+
+.xray-info {
+    text-align: center;
+    img {
+        padding:20px;
+    }
+}
+
+
+#xray-area {
+    h3 {
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    p {
+       padding-top: 0;
+       margin-top: 20px;
+    }
+
+}
+
+
+#xray {
+    height:400px;
+}
+
+
+.img-xray {
+    width: 50px;
+    height: 50px;
+}
+
+
+.draw-arrow {
+    display: none;
+}
+
+#svg-con {
+    h3 {
+        display: none;
+    }
+}
+
+
+
+// Info and Image Section
+.info-box {
+    @include a.moving-gradient;
+
+    p {
+        padding: 50px;
+    }
+
+    margin: 10px;
+}
+
+#infobox1 {
+
+    border-radius: 5px 60px;
+}
+
+#infobox2 {
+    border-radius: 60px 5px;
+}
+
+.image-box {
+    padding: 100px;
+}
+
+#info-container {
+    text-align: center;
+
+    h2 {
+        margin-bottom: 10px;
+    }
+}
+
+//Excited Area
+
+#excited-con {
+    margin: auto;
+   text-align: center;
+    margin-top: 100px;
+
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    #product-img {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 150px;
+    }
+}
+
+
+//Purchase Area 
+#earbud-img {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+#purchase-con {
+    margin-bottom: 150px;
+    text-align: center;
+    img {
+        margin-top: 20px;
+    }
+    h2 {
+        font-family: a.$logo-font;
+        font-size: 3.0rem;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        text-align: center;
+        
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        font-family: a.$body-font-family;
+        font-weight: 400;
+        
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        font-family: a.$body-font-family;
+    }
+
+    h5 {
+        font-family: a.$body-font-family;
+        font-size: 1.2rem;
+        margin-top: 5px;
+        font-weight: 400;
+    }
+}
+
+#product-colours {
+    text-align: center;
+    @include a.flex-center;
+    gap: 10px;
+}
+
+
+#product-div {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(251, 251, 251);
+    @include a.box-shadow;
+    margin-top: 50px;
+    text-align: center;
+    
+    p {
+        margin: 10px;
+    }
+
+}
+
+#rating {
+    img {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 523px) {
+    body {
+        background-image: url(../images/background_desktop.png);
+        background-position: center top -200px;
+    
+    }
+
+    #xray-area {
+        p {
+           padding: 100px;
+           padding-top:0;
+        }
+    
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    //GENERAL
+
+    body {
+        background-image: url(../images/background_desktop.png);
+    }
+
+    //HERO
+#hero {
+    .box {
+            height: 800px;
+     }
+    
+}
+
+
+    //BUY AREA
+    #buy-area{
+
+        img {
+            width:50px;
+        }
+    }
+
+    //X-RAY 
+
+#xray-area {
+    @include a.flex-center;
+    gap: 30px;
+
+    p {
+        padding:20px;
+    }
+
+    h3 {
+        font-size: 8.0rem;
+    }
+}
+
+
+#xray-container {
+    margin-bottom: 100px;
+    margin-top: 100px;
+
+}
+
+
+.xray-info {
+    text-align:left;
+}
+
+
+    //INFORMATION + PICTURES
+
+#info-con1 {
+    @include a.flex-center;
+    gap: 0;
+}
+
+#info-con2 {
+    @include a.flex-center;
+    gap: 0;
+}
+
+
+#info-container {
+    
+    text-align: center;
+
+    h2 {
+        margin-bottom: 50px;
+    }
+    .info {
+ 
+        height: 500px;
+        width: 500px;
+    }
+}
+
+.info-box {
+    @include a.moving-gradient;
+
+    p {
+        padding: 50px;
+    }
+}
+
+
+
+
+#excited-con {
+    margin-top: 100px;
+    text-align: left;
+    #product-img {
+        margin-top: 50px;
+        width: 700px;
+        height: 700px;
+    }
+}
+
+//PURCHASE AREA 
+
+#rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    h3 {
+        text-decoration: underline;
+    }
+}
+
+
+#earbud-img {
+    width: 350px;
+    height: 350px;
+}
+
+#purchase-con {
+    margin-bottom: 150px;
+  
+}
+
+#product-colours {
+    gap: 10px;
+}
+
+
+#product-div {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(251, 251, 251);
+    @include a.box-shadow;
+    margin-top: 50px;
+    text-align: center;
+    
+    p {
+        margin: 10px;
+    }
+
+    #shopping {
+        @include a.flex-center;
+        gap: 10px;
+    }
+}
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+//HERO
+
+    #hero  {          
+        .box {
+        height: 1080px;
+        }   
+    
+    }
+
+//Buy Area
+    
+
+//X-RAY
+    .draw-arrow {
+        display: block;
+        width: 200px;
+        margin-top: 410px;
+        margin-left: 160px;
+    }
+
+    #svg-con {
+
+        h3 {
+            margin-left: 300px;
+            display: block;
+            font-size: 1.2rem;
+        }
+
+    }
+
+    .draw{
+       @include a.draw;
+    }
+
+    #xray-area {
+        display: inline;
+    }
+
+    .xray-info {
+        margin-top: 20px;
+        @include a.flex-center;
+        gap:50px;
+
+        &:first-child {
+        margin-top: 0;
+        }
+
+        img {
+            padding:0;
+        }
+        
+    }
+
+
+    #info-container {
+
+        margin-bottom: 50px;
+        h2 {
+            margin-top: 150px;
+        }
+    }
+    
+
+
+    //Excited for real sound? Area
+
+    #excited-con {
+        @include a.flex-center;
+        gap: 30px;
+    
+        #product-img {
+            width: 700px;
+            height: 700px;
+        }
+    }
+
+
+
+//PURCHASE AREA 
+
+
+#earbud-img {
+    width: 500px;
+    height: 500px;
+}
+
+#purchase-con {
+
+    img {
+        margin: 10px 0 10px 0;
+    }
+  
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h4 {
+        font-size: 1.6rem;
+    }
+
+    h5 {
+
+        font-size: 1.6rem;
+    }
+}
+
+#product-colours {
+    gap: 40px;
+}
+
+
+}
+
+
+
+@media screen and (min-width: 1920px) {
+
+  
+
+}
+   
+
+    

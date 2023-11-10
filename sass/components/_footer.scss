@@ -1,1 +1,214 @@
 @use '../abstracts' as a;
+
+.main-nav ul li a {
+    font-weight: bold; 
+    text-decoration: none;
+    transition: all .4s ease;
+    padding-left: 9px;
+    display: block;
+}
+
+footer  {
+    .burger-button{
+        display: none;
+    }
+    
+    
+}
+
+#footer-burger-con {
+    display: none;
+}
+
+
+.sub-footer-nav {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top:50px;
+
+    hr {
+        
+        margin-top: 10px;
+        width: 400px;
+    }
+    
+    h3 {
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+        margin-top: 50px;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    img {
+
+        width: 30px;
+        transition: all .4s ease;
+
+        &:hover {
+            opacity: 50%;
+        }
+    }
+}
+
+
+.icon-con {
+
+   @include a.flex-center;
+   padding: 20px; 
+   list-style: none;
+   margin-bottom: 50px;
+
+   img {
+    margin: 5px;
+    padding: 3px;
+    text-decoration: none;
+    color: rgb(121, 121, 121);
+    transition: all .4s ease;
+
+    &:hover {
+        opacity: 50%;
+    }
+   }
+
+}
+
+/* Tablet Size */ 
+
+@media screen and (min-width: 768px) {
+ .icon-con {
+    padding: 0;
+ }
+    .sub-footer-nav {
+        text-align:start;
+
+        @include a.flex-start-center;
+        gap: 50px;
+
+        img {
+            width: 20px;
+            margin: 0;
+        }
+
+        hr {
+            display: none;
+        }
+
+        
+
+    ul li {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        margin-top: 0;
+        text-decoration: none;
+        list-style: none;
+    }
+    }
+
+    #footer-nav {
+        display: block;
+        margin-top: 30px;
+    }
+    
+    .main-nav ul li a {
+        font-weight: bold; 
+        text-decoration: none;
+        transition: all .4s ease;
+        margin-right: 10px;
+        padding-left: 9px;
+       display: block;
+    }
+    
+    footer  .burger-button {
+        display: none;
+    }
+    
+    .footer-burger-con {
+        display: none;
+    }
+
+    
+ #footer-burger-con ul li, .burger-con ul li:first-child {
+    border: none;
+    display: inline;
+ }
+
+
+ #footer-logo {
+    width: 50px;
+    margin: 50px;
+ }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .sub-footer-nav {
+        margin-bottom: 50px;
+        margin-top:50px;
+    
+        hr {
+            margin-top: 10px;
+        }
+        
+        gap: 50px;
+    
+        h3 {
+            font-size: 2.0rem;
+            margin-bottom: 5px;
+            margin-top: 50px;
+        }
+    
+        ul li {
+            margin-bottom: 10px;
+            margin-top: 10px;
+            text-decoration: none;
+            list-style: none;
+            font-size: 1.6rem;
+        }
+    
+        img {
+            width: 30px;
+            transition: all .4s ease;
+    
+            &:hover {
+                opacity: 50%;
+            }
+        }
+    }
+    
+    
+    .icon-con {
+       display: flex;
+       padding: 50px; 
+       list-style: none;
+    
+       img {
+        padding: 3px;
+        margin: 10px;
+        text-decoration: none;
+        color: rgb(121, 121, 121);
+        transition: all .4s ease;
+    
+        &:hover {
+            opacity: 50%;
+        }
+       }
+
+        .burger-con {
+            display: flex;
+            margin-top: 30px;
+            justify-content: center;
+        }
+        
+        .burger-button {
+            display: none;
+        }
+ }
+
+}

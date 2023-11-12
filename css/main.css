@@ -699,6 +699,24 @@ model-viewer h2 {
     }
   }
 }
+#explode-view {
+  max-width: 100%;
+  object-fit: cover;
+  height: 400px;
+  object-position: 53%;
+  /* width: 100vw; */
+}
+
+canvas {
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  #explode-view {
+    object-fit: fill;
+    height: auto;
+  }
+}
 body {
   background-image: url(../images/background_mobile.png);
   background-repeat: repeat-y;

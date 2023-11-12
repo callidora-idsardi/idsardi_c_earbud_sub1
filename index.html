@@ -4,7 +4,7 @@
 <head>
     <title>Crystal ClearBuds</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link rel="stylesheet" href="https://use.typekit.net/jgi5grm.css">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -12,6 +12,7 @@
 
     <!-- link to greensock main library and scroll plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
 
 </head>
 
@@ -68,15 +69,14 @@
             <div class="full-width-grid-con">
 
                 <div id="hero" class="box col-span-full">Hero Image</div>
-
             </div>
-            <div class="full-width-grid-con">
-                <section class="col-span-full" id="scrolling-con">
-                    <h2>INTRODUCING...</h2>
-                    <div class="box col-span-full">
-                        Scrolling Animation
-                    </div>
-                </section>
+
+                <div class="grid">
+                <div id="scrolling-con" class="col-span-full">
+                    <canvas id="explode-view"></canvas> 
+                </div>
+                </div>
+      
             </div>
             <div class="grid-con" id="buy-con">
                 <section class="col-span-full"  id="buy-area">
@@ -324,12 +324,17 @@
    
 
     <!-- Loads <model-viewer> for browsers: -->
-
-    <script src="js/main.js"></script>
+    <script src="js/scroll-animation.js"></script>
     <script src="js/x-ray.js"></script>
     <script src="js/greensock.js"></script>
-    
+    <script src="js/main.js"></script>
+
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
 
 </body>
 

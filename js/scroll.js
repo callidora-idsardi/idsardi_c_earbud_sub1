@@ -9,7 +9,7 @@
             e.preventDefault(); 
             console.log(e.currentTarget.hash);
             let selectedLink = e.currentTarget.hash;
-            gsap.to(window, {duration: 2, scrollTo:{y:`${selectedLink}`, offsetY:50 }});
+            gsap.to(window, {duration: 1, scrollTo:{y:`${selectedLink}`, offsetY:50 }});
     }
 
     navLinks.forEach((link) => {

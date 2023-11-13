@@ -2,8 +2,6 @@
 
 
 
-
-
 body {
     background-image: url(../images/background_mobile.png);
     background-repeat: repeat-y;
@@ -12,21 +10,16 @@ body {
 }
 
 // Hero
-
-#hero {
-    margin-top: 40px;
-    height: 700px;
+#hero img{
+    object-fit: cover;
+    height: 377px;
+    object-position: 30%;
 }
 
 // Scroll Animation 
 
 #scrolling-con {
     text-align: center;
-    margin-top: 100px;
-
-    .box {
-        height: 600px;
-    }
 
     h2 {
         margin-bottom: 50px;
@@ -116,7 +109,6 @@ img {
 }
 
 #infobox1 {
-
     border-radius: 5px 60px;
 }
 
@@ -130,9 +122,18 @@ img {
 
 #info-container {
     text-align: center;
+    p {
+        margin-top: 40px;
+        font-size: 3.5rem;
+        line-height: 50px;
+    }
 
     h2 {
         margin-bottom: 10px;
+    }
+
+    img {
+        border-radius: 5px 60px;
     }
 }
 
@@ -140,6 +141,7 @@ img {
 
 #excited-con {
     margin: auto;
+    margin-bottom: 100px;
    text-align: center;
     margin-top: 100px;
 
@@ -147,15 +149,24 @@ img {
         margin-bottom: 50px;
     }
 
-    #product-img {
-        width: 300px;
-        height: 300px;
-        margin-bottom: 150px;
-    }
+ 
+
+
 }
 
 
 //Purchase Area 
+
+#purchase-banner {
+margin-bottom: 150px;
+img {
+
+    object-fit: cover;
+    height: 377px;
+}
+}
+
+
 #earbud-img {
     width: 300px;
     height: 300px;
@@ -198,6 +209,7 @@ img {
 }
 
 #product-colours {
+    cursor: pointer;
     text-align: center;
     @include a.flex-center;
     gap: 10px;
@@ -219,6 +231,7 @@ img {
 }
 
 #rating {
+    @include a.flex-center;
     img {
         margin-bottom: 20px;
     }
@@ -252,13 +265,12 @@ img {
         background-image: url(../images/background_desktop.png);
     }
 
-    //HERO
-#hero {
-    .box {
-            height: 800px;
-     }
-    
+// Hero
+#hero img{
+    object-fit: fill;
+    height: auto;
 }
+
 
 
     //BUY AREA
@@ -365,6 +377,7 @@ img {
 
 #purchase-con {
     margin-bottom: 150px;
+    margin-top: 250px;
   
 }
 
@@ -396,14 +409,7 @@ img {
 
 @media screen and (min-width: 1200px) {
 
-//HERO
 
-    #hero  {          
-        .box {
-        height: 1080px;
-        }   
-    
-    }
 
 //Buy Area
     

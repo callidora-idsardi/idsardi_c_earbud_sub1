@@ -379,6 +379,7 @@ model-viewer h2 {
 }
 
 .Hotspot {
+  cursor: pointer;
   background: url(../images/hotspot.svg) center no-repeat;
   border: 0;
   width: 30px;
@@ -421,7 +422,7 @@ model-viewer h2 {
   width: max-content;
 }
 .HotspotAnnotation img {
-  height: 30px;
+  width: 50px;
   margin-top: 16px;
   margin-bottom: 10px;
 }
@@ -443,9 +444,6 @@ model-viewer h2 {
   }
   .HotspotAnnotation {
     max-width: 200px;
-  }
-  .HotspotAnnotation img {
-    height: 50px;
   }
 }
 #menu {
@@ -723,17 +721,14 @@ body {
   background-position: center top -130px;
 }
 
-#hero {
-  margin-top: 40px;
-  height: 700px;
+#hero img {
+  object-fit: cover;
+  height: 377px;
+  object-position: 30%;
 }
 
 #scrolling-con {
   text-align: center;
-  margin-top: 100px;
-}
-#scrolling-con .box {
-  height: 600px;
 }
 #scrolling-con h2 {
   margin-bottom: 50px;
@@ -826,22 +821,34 @@ body {
 #info-container {
   text-align: center;
 }
+#info-container p {
+  margin-top: 40px;
+  font-size: 3.5rem;
+  line-height: 50px;
+}
 #info-container h2 {
   margin-bottom: 10px;
+}
+#info-container img {
+  border-radius: 5px 60px;
 }
 
 #excited-con {
   margin: auto;
+  margin-bottom: 100px;
   text-align: center;
   margin-top: 100px;
 }
 #excited-con h2 {
   margin-bottom: 50px;
 }
-#excited-con #product-img {
-  width: 300px;
-  height: 300px;
+
+#purchase-banner {
   margin-bottom: 150px;
+}
+#purchase-banner img {
+  object-fit: cover;
+  height: 377px;
 }
 
 #earbud-img {
@@ -881,6 +888,7 @@ body {
 }
 
 #product-colours {
+  cursor: pointer;
   text-align: center;
   display: flex;
   align-items: center;
@@ -900,6 +908,11 @@ body {
   margin: 10px;
 }
 
+#rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #rating img {
   margin-bottom: 20px;
 }
@@ -918,8 +931,9 @@ body {
   body {
     background-image: url(../images/background_desktop.png);
   }
-  #hero .box {
-    height: 800px;
+  #hero img {
+    object-fit: fill;
+    height: auto;
   }
   #buy-area img {
     width: 50px;
@@ -1007,6 +1021,7 @@ body {
   }
   #purchase-con {
     margin-bottom: 150px;
+    margin-top: 250px;
   }
   #product-colours {
     gap: 10px;
@@ -1030,9 +1045,6 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  #hero .box {
-    height: 1080px;
-  }
   .draw-arrow {
     display: block;
     width: 200px;

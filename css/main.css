@@ -721,12 +721,6 @@ body {
   background-position: center top -130px;
 }
 
-#hero img {
-  object-fit: cover;
-  height: 377px;
-  object-position: 30%;
-}
-
 #scrolling-con {
   text-align: center;
 }
